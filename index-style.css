@@ -1,0 +1,353 @@
+body{
+    padding:0px;
+    margin:0px
+}
+
+
+
+
+.slider{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(./images/background.jpg);
+    background-position: center;
+    height:100vh;
+    width:100vw;
+    overflow: hidden;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:white;    
+}
+
+.header{
+    display: flex; 
+    flex-wrap: wrap;
+    position: fixed;
+    justify-content: space-between; 
+    color:white; 
+    height:60px; 
+    align-items: center;
+    background-color: #FC466B;
+    overflow: hidden;
+    z-index: 10;
+    width: 100%;
+    max-width: 100%;
+
+
+}
+.logo{
+    margin-left: 25px;
+}
+.header-content{
+    display: flex; 
+    justify-content: space-between;
+     width:70vw;
+     margin-right:35px;
+
+}
+.header-content > a{
+    color:white;
+    text-decoration: none;
+    position: relative; 
+}
+
+
+.header-content > a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0; /* Initially, set it to the left side */
+  width: 0; /* Initially, set it to zero width */
+  height: 2px;
+  background-color: wheat;
+  transition: width 1s ease; /* Transition the width property */
+}
+
+.header-content > a:hover::before {
+  width: 100%; /* Expand the width to 100% on hover */
+}
+
+.hero-btn {
+    
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background-color: transparent;
+    cursor: pointer;  
+}
+.hero-btn:hover {
+    border: 1px solid #FC466B;
+    background: #FC466B;
+    transition: 1s;
+    color: #fff;
+}
+
+
+
+
+@media only screen and (max-width: 870px) {
+    .header {
+      display: none;
+    }
+    .header-side-bar {
+        display: block;
+    }
+  }
+  @media only screen and (min-width: 871px) {
+    .header-side-bar {
+        display: none;
+    }
+
+
+  }
+
+  .campus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap ;
+  }
+  
+  
+  
+  
+  .campus-col {
+  max-width:360px;
+  height:360px;
+  overflow:hidden;
+  border-radius: 6px;
+  margin:10px;
+  }
+  .don-div {
+    width:100%;
+    height:100%;
+    object-fit: contain;
+    object-position: center;  
+  }
+.facilities{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+  .facilities-col {
+    width:350px;
+    border-radius: 10px;
+    background-color: white;
+    margin:10px;
+  
+    box-shadow: 5px 5px 5px rgb(184, 162, 162);
+  }
+  .facilities-col img {
+    width: 100%;
+    height:350px;
+    border-radius: 10px;
+  }
+  .facilities-col p {
+
+    padding: 0 0 0 5px;
+  }
+  .facilities-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+    padding: 0 0 0 5px;
+  }
+  .facilities-col a{
+    text-decoration: none;
+    color:#FC466B
+  }
+.testimonials {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+  }
+  .testimonial-col {
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+  }
+  .testimonial-col img {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+  }
+  .testimonial-col p {
+    padding: 0;
+  }
+  .testimonial-col h3 {
+    margin-top: 15px;
+    text-align: left;
+  }
+  .testimonial-col i {
+    color: #FC466B;
+  }
+  @media (max-width: 700px) {
+    .testimonial-col img {
+      margin-left: 0px;
+      margin-right: 15px;
+    }
+  }
+  .cta {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(./images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+  }
+  .cta h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+  }
+  @media (max-width: 700px) {
+    .cta h1 {
+      font-size: 20px;
+    }
+  }
+  
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+  }
+  .footer p{
+    font-size: large;
+  
+  }
+  .footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 800;
+  }
+  .icons i {
+    color: #FC466B;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 25px;
+  }
+  .fa-heart {
+    color: #FC466B;
+  }
+  .about-slider{
+   
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url(./images/background.jpg);
+        background-position: center;
+        height:400px;
+        width:100vw;
+        overflow: hidden;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color:white;   
+  }
+  .about-us{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse ;
+  }
+  .about-col{
+    max-width:600px;
+}
+.about-col h1{
+  margin: 30px 0;
+  letter-spacing: 3px;
+}
+.about-col p{
+  margin: 30px 0;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+  .about-col-img {
+    max-width:600px;
+ 
+
+   
+  }
+  .red-btn{
+    border: 1px solid #FC466B;
+    background: transparent;
+    color: #FC466B;
+
+  }
+  .red-btn:hover{
+    color: #fff;
+  }
+
+
+  .location {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+  }
+  .location iframe {
+    width: 100%;
+  }
+  .contact-us{
+    width: 80%;
+    margin: auto;
+  }
+  .contact-col{
+    max-width: 600px;
+    min-width: 360px;
+    width:500px;
+    margin-bottom: 30px;
+  }
+  .contact-col div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .contact-col div i {
+    font-size: 28px;
+    color:#f44336;
+    margin: 10px;
+    margin-right: 30px;
+  }
+  .contact-col div p{
+    padding: 0;
+  }
+  .contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+  }
+  .contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  .row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+  }

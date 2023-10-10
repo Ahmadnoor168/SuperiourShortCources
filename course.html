@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website</title>
+    <link rel="stylesheet" href="index-style.css" />
+    <link rel="stylesheet" href="media-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+  <style>
+    .cources-card{
+      padding-bottom: 30px; 
+      width:350px;
+    border-radius: 10px;
+    background-color: white;
+    margin:10px;
+    box-shadow: 5px 5px 5px rgb(184, 162, 162); overflow: hidden;
+    }
+ 
+  </style>
+  </head>
+    <body>
+    
+      <div class="header" >
+        <div class="logo" > LOGO </div>
+        <div class="header-content" >
+        <a href="./index.html">HOME</a>
+        <a href="./about.html">ABOUT</a>
+        <a href="./course.html">COURSE</a>
+        <a href="./contact.html">CONTACT</a>
+        <a href="./dashbord.html">DASHBORD</a>
+        <a href="http://127.0.0.1:8000/admin/dashboard" target="_blank">ADMIN</a>
+        <a href="http://127.0.0.1:8000/organization/dashboard" target="_blank">ORGANIZATION</a>
+      </div>
+      </div>
+      <div class="header-side-bar" style="position: absolute; z-index: 1" >
+
+        <div class="header2"></div>
+        
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+        </label>
+        <div id="sidebarMenu">
+        <ul class="sidebarMenuInner">
+        <li>Apex Tech <span>Web Developer</span></li>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./about.html">ABOUT</a></li>
+        <li>  <a href="./course.html">COURSE</a></li>
+        <li>  <a href="./contact.html">CONTACT</a></li>
+        <li> <a href="./signin/login.html">DASHBORD</a></li>
+        <li><a href="http://127.0.0.1:8000/admin/dashboard" target="_blank">ADMIN</a></li>
+        <li>  <a href="http://127.0.0.1:8000/organization/dashboard" target="_blank">ORGANIZATION</a></li>
+        </ul>
+        </div>
+      </div>
+
+
+<!-- campus -->
+<section >
+  <h1 style="margin-top: 80px; font-size: 30px; font-weight: 900; text-transform: uppercase; margin-left: 30px; ">Institutes</h1>
+  <div class="facilities">
+    <div class="cources-card">
+      <!-- <img src="./images/superior university.jpg" alt=""> -->
+      <div style="height: 250px; width:100%">
+      <img src="./images/superiour/47571366_329267381009073_3702311059541983232_n.jpg" alt="" style="height:100%; width:100%; object-fit: cover; object-position: center;" >
+    </div>
+        <h3 style="text-align: center;">Mandi Baha Ud Din</h3>
+        <div style="text-align: center;">
+        <a href="clg.html" class="hero-btn red-btn" ><strong >Cources Detail</strong></a>
+      </div>
+      </div>
+      <div  class="cources-card">
+
+
+        <div style="height: 250px; width:100%">
+        <img src="./images/superiour/ff5e0df3-5548-4624-9701-4cd489983f59-1024x576.jpg" style="height:100%; width:100%; object-fit: cover; object-position: center;" />
+        </div>
+
+
+        <h3 style="text-align: center;">Mandi Baha Ud Din</h3>
+        <div style="text-align: center;">
+        <a href="courseDetailThree.html" class="hero-btn red-btn" style="text-align: center;">Cources Detail</a>
+    </div>
+
+
+    </div>
+    <div  class="cources-card">
+      <!-- <img src="./images/Superior academy.png" alt=""> -->
+      <div style="height: 250px; width:100%">
+      <img src="./images/superiour/superior_college_lahore-1024x693-1.jpg" style="height:100%; width:100%; object-fit: cover; object-position: center;" />
+</div>
+        <h3 style="text-align: center;" >Mandi Baha Ud Din</h3>
+        <div style="text-align: center;">
+        <a href="courseDetail.html" class="hero-btn red-btn" >Cources Detail</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Facilities -->
+
+
+
+
+
+
+
+<section class="">
+  <h1 style="margin:30px ;font-size: 30px; font-weight: 900; text-transform: uppercase;">Our Facilities</h1>
+  <div class="facilities" >
+
+
+    <div class="cources-card"">
+      <div style="height: 250px; width:100%">
+      <img src="./images/library.png" alt="" style="height:100%; width:100%; object-fit: cover; object-position: center;">
+    </div>
+
+
+      <h3>Scholarships</h3>
+      <p>The Scholarship System is all about strategies to help students and their families pay for college.</p>
+      <div style="text-align: center;">
+      <a href="./facality/facalityDetail.html" class="hero-btn red-btn">Cources Detail</a>
+    </div>
+    </div>
+
+
+    <div class="cources-card" >
+      <div style="height: 250px; width:100%">
+      <img src="./images/basketball.jpg" alt="" style="height:100%; width:100%; object-fit: cover; object-position: center;">
+    </div>
+      <h3>Short Courses</h3>
+      <p>We provide information about short courses in differnt institutes</p>
+      <div style="text-align: center;">
+        <a href="./facality/facalityDetail.html" class="hero-btn red-btn">Cources Detail</a>
+    </div>
+    </div>
+    <div class="cources-card">
+      <div style="height: 250px; width:100%">
+      <img src="./images/cafeteria.png" alt="" style="height:100%; width:100%; object-fit: cover; object-position: center;">
+    </div>
+      <h3 style="text-align: center;">Courses</h3>
+      <p>We provide courses information which institutes will be held in their organizations.</p>
+      <div style="text-align: center;">
+        <a href="./facality/facalityDetail.html" class="hero-btn red-btn">Cources Detail</a>
+    </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+  <!--end facilities-->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>We provide a easy way to students who does not know which Institutes or organization provides short or long courses in their differnt departments.
+        And also we provide scholarships to students who doen't costly paid courses.</p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p>Made Width <i class="fa-solid fa-heart"></i> Aqsa & Esha</p>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

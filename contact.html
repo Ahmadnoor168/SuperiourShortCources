@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website</title>
+
+    <link rel="stylesheet" href="index-style.css" />
+    <link rel="stylesheet" href="media-style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+  </head>
+    <body>
+
+      <div class="header" >
+
+        <div class="logo" > LOGO </div>
+      
+        <div class="header-content" >
+        <a href="./index.html">HOME</a>
+        <a href="./about.html">ABOUT</a>
+        <a href="./course.html">COURSE</a>
+        <a href="./contact.html">CONTACT</a>
+        <a href="./dashbord.html">DASHBORD</a>
+        <a href="http://127.0.0.1:8000/admin/dashboard" target="_blank">ADMIN</a>
+        <a href="http://127.0.0.1:8000/organization/dashboard" target="_blank">ORGANIZATION</a>
+      </div>
+      
+      </div>
+      <div class="header-side-bar" style="position: absolute; z-index: 1" >
+
+        <div class="header2"></div>
+        
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+        </label>
+        <div id="sidebarMenu">
+        <ul class="sidebarMenuInner">
+        <li>Apex Tech <span>Web Developer</span></li>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./about.html">ABOUT</a></li>
+        <li>  <a href="./course.html">COURSE</a></li>
+        <li>  <a href="./contact.html">CONTACT</a></li>
+        <li> <a href="./signin/login.html">DASHBORD</a></li>
+        <li><a href="http://127.0.0.1:8000/admin/dashboard" target="_blank">ADMIN</a></li>
+        <li>  <a href="http://127.0.0.1:8000/organization/dashboard" target="_blank">ORGANIZATION</a></li>
+        </ul>
+        </div>
+      </div>
+
+
+      
+
+
+
+
+    <!--------contact us--------->
+    <div>
+    <section class="location">
+    
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13446.749499091502!2d73.47833823233763!3d32.58786054619306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f7df1cdec02e5%3A0xe5c3ff4369ec3ca3!2sMujahid%20Abad%20Mandi%20Bahauddin%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1690280751094!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+        <div class="contact-col">
+          <div>
+            <i class="fa-solid fa-house"></i>
+            <span>
+            <h5>Superior University Sargodha Road, M.B.Din</h5>
+            <p>Punjab, Pakistan</p>
+            
+          </span>
+          </div>
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            <span>
+            <h5>+92 312 0796478</h5>
+            <p>Always Open</p>
+          </span>
+          </div>
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <span>
+            <h5>aqsasarwar769@gmail.com</h5>
+            <p>Email us </p>
+          </span>
+          </div>
+        </div>
+
+        <div class="contact-col">
+          <form action="form-handler.php" method = "post">
+            <input type="text" name="name" placeholder="Enter Your Name" required>
+            <input type="email" name="email" placeholder="Enter Email" required>
+            <input type="text" name="subject" placeholder="Enter Your Subject" required>
+            <textarea rows="8" name="message" placeholder="Message" required></textarea>
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+            
+          </form>
+        </div>
+
+      </div>
+    </section>
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>We provide a easy way to students who does not know which Institutes or organization provides short or long courses in their differnt departments.And also we provide scholarships to students who doen't costly paid courses.</p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p>Made Width <i class="fa-solid fa-heart"></i>Aqsa Sarwar & Esha Fatima </p>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
