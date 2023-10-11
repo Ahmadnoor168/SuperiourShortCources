@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index-style.css" />
+    <link rel="stylesheet" href="media-style.css" />
     <style>
+
         #data-table {
   width: 100%;
   border-collapse: collapse;
-}
+  margin-top:100px;
+  width:80%;
+ 
 
+}
+tr:nth-child(even) {background-color: #e9e0e0;}
 #data-table th,
 #data-table td {
   border: 1px solid #ccc;
@@ -17,11 +24,50 @@
 }
 
 #data-table th {
-  background-color: #f2f2f2;
+
+  background-color: #FC466B;
 }
     </style>
 </head>
 <body>
+
+  <div class="header" >
+    <div class="logo" > LOGO </div>
+    <div class="header-content" >
+    <a href="./index.html">HOME</a>
+    <a href="./about.html">ABOUT</a>
+    <a href="./course.html" >COURSE</a>
+    <a href="./contact.html">CONTACT</a>
+    <a href="./signin/login.html" class="active">DASHBORD</a>
+    <a href="http://127.0.0.1:8000/admin/dashboard" target="_blank">ADMIN</a>
+    <a href="http://127.0.0.1:8000/organization/dashboard" target="_blank">ORGANIZATION</a>
+  </div>
+  </div>
+  <div class="header-side-bar" style="position: absolute; z-index: 1" >
+
+    <div class="header2"></div>
+    
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+    <li>Apex Tech <span>Web Developer</span></li>
+    <li><a href="./index.html">HOME</a></li>
+    <li><a href="./about.html">ABOUT</a></li>
+    <li>  <a href="./course.html">COURSE</a></li>
+    <li>  <a href="./contact.html">CONTACT</a></li>
+    <a href="./signin/login.html">DASHBORD</a>
+    <li><a href="http://127.0.0.1:8000/admin/dashboard" target="_blank">ADMIN</a></li>
+    <li>  <a href="http://127.0.0.1:8000/organization/dashboard" target="_blank">ORGANIZATION</a></li>
+    </ul>
+    </div>
+  </div>
+  <center>
     <table id="data-table">
         <thead>
           <tr>
@@ -37,6 +83,7 @@
         </thead>
         <tbody></tbody>
       </table>
+    </center>
 
 
 

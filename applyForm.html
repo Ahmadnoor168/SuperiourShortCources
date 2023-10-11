@@ -4,37 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        input{
+            display: block;
+            width: 360px;
+            height: 30px;
+            border-radius: 4px;
+
+        }
+    </style>
 </head>
 <body>
    <h1>Add Information</h1>
-<label>First Name</label>
+   <div style="display: flex; flex-direction: column; align-items: center; gap:20px">
+  
+    <div>
+    <label>First Name</label>
     <input type="text" id="fname" placeholder="First Name" required />
-
+</div>
+<div>
     <label>Last Name</label>
     <input type="text" id='lname' placeholder="Last Name" required />
+</div>
+<div>    
     <label>Father Name</label>
     <input type="text" id='fatherName' placeholder="Falther Name" required />
-
-
+</div>
+<div>
     <label>Phone Number</label>
     <input type="text" id='pnumber' placeholder="Phone Number" required />
-
+</div>
+<div>
     <label>Qualification</label>
     <input type="text" id='qualification' placeholder="Qualification" required />
-
-
+</div>
+<div>
     <label>Full Mark</label>
     <input type="text" id='tmark' placeholder="Full Mark" required />
+</div>
+<div>
     <label>Obtain Mark</label>
     <input type="text" id='obtain' placeholder="Obtain mark" required />
-
-
-
+</div>
+<div>
     <label>CNIC</label>
     <input type="text" id='cnic' placeholder="CNIC" required />
-  
-    <input type="submit" id="button" placeholder="First Name" />
 
+</div>
+<input type="submit" id="button" placeholder="First Name" />
+</div>
 
     <script src="index.js"></script>
 
