@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../index-style.css" />
+    <link rel="stylesheet" href="../media-style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo"></div>
+      <div class="header-content">
+        <a href="../index.html">HOME</a>
+        <a href="../about.html">ABOUT</a>
+        <a href="../course.html" class="active">COURSE</a>
+        <a href="../contact.html">CONTACT</a>
+        <a href="../signin/login.html">DASHBORD</a>
+        <a href="http://127.0.0.1:8000/admin/dashboard" target="_blank">ADMIN</a>
+        <a href="http://127.0.0.1:8000/organization/dashboard" target="_blank">ORGANIZATION</a>
+      </div>
+    </div>
+    <div class="header-side-bar" style="position: absolute; z-index: 1">
+      <div class="header2"></div>
+
+      <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
+
+      <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+      </label>
+      <div id="sidebarMenu">
+        <ul class="sidebarMenuInner">
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../about.html">ABOUT</a></li>
+          <li><a href="../course.html">COURSE</a></li>
+          <li><a href="../contact.html">CONTACT</a></li>
+          <a href="../signin/login.html">DASHBORD</a>
+          <li><a href="http://127.0.0.1:8000/admin/dashboard" target="_blank">ADMIN</a></li>
+          <li><a href="http://127.0.0.1:8000/organization/dashboard" target="_blank">ORGANIZATION</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <h1 style="margin-top: 80px; font-size: 30px; font-weight: 900; text-transform: uppercase; margin-left: 30px">
+      Cources
+    </h1>
+    <div class="facilities" style="margin-top: 40px">
+      <div
+        class="cources-card"
+        style="
+          min-width: 320px;
+          max-width: 400px;
+          width: 100%;
+          margin: 20px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          padding-bottom: 40px;
+        "
+      >
+        <!-- <img src="./images/superior university.jpg" alt=""> -->
+        <div style="height: 250px; width: 100%">
+          <img
+            src="../images/superiour/47571366_329267381009073_3702311059541983232_n.jpg"
+            alt=""
+            style="height: 100%; width: 100%; object-fit: cover; object-position: center"
+          />
+        </div>
+        <h3 style="text-align: center">superior colleges</h3>
+        <div style="text-align: center">
+          <a href="../CourceDeial/superiorcolleges.html" class="hero-btn red-btn"><strong>Cources Detail</strong></a>
+        </div>
+      </div>
+      <div
+        class="cources-card"
+        style="
+          min-width: 320px;
+          max-width: 400px;
+          width: 100%;
+          margin: 20px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          padding-bottom: 40px;
+        "
+      >
+        <div style="height: 250px; width: 100%">
+          <img
+            src="../images/superiour/ff5e0df3-5548-4624-9701-4cd489983f59-1024x576.jpg"
+            style="height: 100%; width: 100%; object-fit: cover; object-position: center"
+          />
+        </div>
+
+        <h3 style="text-align: center">superior university</h3>
+        <div style="text-align: center">
+          <a href="../CourceDeial/superiorcolleges.html" class="hero-btn red-btn" style="text-align: center"
+            >Cources Detail</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

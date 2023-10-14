@@ -6,28 +6,20 @@
     <title>Document</title>
     <link rel="stylesheet" href="../index-style.css" />
     <link rel="stylesheet" href="../media-style.css" />
-    <style>
-      input {
-        width: 350px;
-        height: 24px;
-        margin-bottom: 20px;
-      }
-    </style>
   </head>
   <body>
     <div class="header">
       <div class="logo"></div>
       <div class="header-content">
-        <a href="../index.html">HOME</a>
+        <a href="./index.html">HOME</a>
         <a href="../about.html">ABOUT</a>
-        <a href="../course.html">COURSE</a>
+        <a href="../course.html" class="active">COURSE</a>
         <a href="../contact.html">CONTACT</a>
-        <a href="../signin/login.html" class="active">DASHBORD</a>
+        <a href="../signin/login.html">DASHBORD</a>
         <a href="http://127.0.0.1:8000/admin/dashboard" target="_blank">ADMIN</a>
         <a href="http://127.0.0.1:8000/organization/dashboard" target="_blank">ORGANIZATION</a>
       </div>
     </div>
-
     <div class="header-side-bar" style="position: absolute; z-index: 1">
       <div class="header2"></div>
 
@@ -51,16 +43,37 @@
       </div>
     </div>
 
-    <div style="height: 100vh; width: 100vw; display: flex; justify-content: center; align-items: center">
-      <div style="width: 350px">
-        <input type="email" value="" placeholder="Enter Email" required id="email" />
-        <br />
-        <input type="password" value="" placeholder="Enter Password" id="password" />
-        <br />
-        <button onclick="handleSubmit(event)">Login</button>
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap; height: 100vh; align-items: center">
+      <div
+        style="
+          min-width: 300px;
+          max-width: 450px;
+          height: 70vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: flex-start;
+        "
+      >
+        <p style="font-size: 30px">GET SCHOLLERSHIP WITH US</p>
+        <p style="font-size: 15px">
+          If you're a prospective college student or you're currently earning a degree, you may want to apply for local
+          or national scholarships to support the cost of your education. A well-written and engaging submission
+          document, such as an application letter, can help you demonstrate why you deserve the assistance and funding.
+          Adding important details about your accomplishments, goals and career plans can allow you to distinguish
+          yourself from other candidates and impress an application review committee.
+        </p>
+
+        <a href="./contact.html" class="hero-btn" style="border: 1px solid rgb(201, 193, 193); color: black"
+          >SHOW SCHOLLERSHIP COURCES</a
+        >
+      </div>
+      <div style="width: 450px; height: 450px; overflow: hidden; border-radius: 8px">
+        <img
+          src="../images/superiour/scholarship-concept-student-on-laptop-applying-for-a-scholarship-vector.jpg"
+          style="height: 100%; width: 100%"
+        />
       </div>
     </div>
-
-    <script src="../script.js"></script>
   </body>
 </html>

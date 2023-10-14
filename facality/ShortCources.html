@@ -6,13 +6,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="../index-style.css" />
     <link rel="stylesheet" href="../media-style.css" />
-    <style>
-      input {
-        width: 350px;
-        height: 24px;
-        margin-bottom: 20px;
-      }
-    </style>
   </head>
   <body>
     <div class="header">
@@ -20,14 +13,13 @@
       <div class="header-content">
         <a href="../index.html">HOME</a>
         <a href="../about.html">ABOUT</a>
-        <a href="../course.html">COURSE</a>
+        <a href="../course.html" class="active">COURSE</a>
         <a href="../contact.html">CONTACT</a>
-        <a href="../signin/login.html" class="active">DASHBORD</a>
+        <a href="../signin/login.html">DASHBORD</a>
         <a href="http://127.0.0.1:8000/admin/dashboard" target="_blank">ADMIN</a>
         <a href="http://127.0.0.1:8000/organization/dashboard" target="_blank">ORGANIZATION</a>
       </div>
     </div>
-
     <div class="header-side-bar" style="position: absolute; z-index: 1">
       <div class="header2"></div>
 
@@ -51,16 +43,35 @@
       </div>
     </div>
 
-    <div style="height: 100vh; width: 100vw; display: flex; justify-content: center; align-items: center">
-      <div style="width: 350px">
-        <input type="email" value="" placeholder="Enter Email" required id="email" />
-        <br />
-        <input type="password" value="" placeholder="Enter Password" id="password" />
-        <br />
-        <button onclick="handleSubmit(event)">Login</button>
+    <h1 style="margin-top: 80px; font-size: 30px; font-weight: 900; text-transform: uppercase; margin-left: 30px">
+      Cources
+    </h1>
+
+    <div class="facilities" style="margin-top: 40px; gap: 20px">
+      <div
+        class="cources-card"
+        style="
+          min-width: 320px;
+          max-width: 400px;
+          width: 100%;
+          margin: 20px;
+
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          padding-bottom: 40px;
+        "
+      >
+        <!-- <img src="./images/Superior academy.png" alt=""> -->
+        <div style="height: 250px; width: 100%">
+          <img
+            src="../images/superiour/superior_college_lahore-1024x693-1.jpg"
+            style="height: 100%; width: 100%; object-fit: cover; object-position: center"
+          />
+        </div>
+        <h3 style="text-align: center">Apex Tecnical Training Institute</h3>
+        <div style="text-align: center">
+          <a href="../CourceDeial/apextecincalTriningInstitute.html" class="hero-btn red-btn">Cources Detail</a>
+        </div>
       </div>
     </div>
-
-    <script src="../script.js"></script>
   </body>
 </html>
