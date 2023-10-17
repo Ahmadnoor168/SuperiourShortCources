@@ -13,7 +13,7 @@ function handleSubmit(event) {
   let password = document.getElementById('password').value
 
   if (email === 'education@gmail.com' && password === 'education@123') {
-    location.href = './dashbord.html'
+    location.href = '../dashbord.html'
   } else {
     console.log('not match')
   }
